@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giraffe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f1;
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #a67c00; /* Warna Emas Kecokelatan */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            border-bottom: 3px solid #634806; /* Aksen Cokelat Tua */
+            padding-bottom: 5px;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ced6e0;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        strong {
+            color: #a67c00;
+        }
+
+        /* Status Tag khusus untuk Vulnerable */
+        .status-tag-vulnerable {
+            background-color: #f39c12; /* Warna Oranye untuk status Rentan */
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .back-btn {
+            margin-top: 25px;
+            text-decoration: none;
+            color: #1b4d3e;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #a67c00;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Giraffe</h1>
+
+    <div class="image-container">
+        <img src="../../assets/images/girafe.jpeg" alt="Graceful Giraffe photographed by Faaiz and Aulia">
+    </div>
+
+    <ul>
+        <li><strong>Scientific Name:</strong> <em>Giraffa camelopardalis</em></li>
+        <li><strong>Habitat:</strong> Savannas and open woodlands across Africa.</li>
+        <li><strong>Fun Fact:</strong> Giraffes only need 5 to 30 minutes of sleep in a 24-hour period! They often take quick naps that last only a minute or two, sometimes even standing up.</li>
+        <li><strong>Conservation Status:</strong> <span class="status-tag-vulnerable">Vulnerable</span></li>
+    </ul>
+
+    <a href="../anilist.html" class="back-btn">← Back to Animal List</a>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal List</title>
+    <style>
+        /* Palet Warna Earth Tones */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f1;
+            color: #2d3436;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: #1b4d3e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            color: #8ba888;
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        /* Container Grid untuk Kartu */
+        .animal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* Desain Kartu Menu */
+        .animal-card {
+            background-color: white;
+            border-radius: 12px;
+            text-decoration: none;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-8px);
+            border-color: #1b4d3e;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .category {
+            font-size: 0.75rem;
+            color: #8ba888;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .animal-name {
+            color: #2d3436;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Tombol Navigasi Bawah */
+        .navigation {
+            margin-top: 60px;
+        }
+
+        .home-btn {
+            text-decoration: none;
+            color: #1b4d3e;
+            font-weight: bold;
+            border: 2px solid #1b4d3e;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #1b4d3e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Faaiz & Aulia</h1>
+        <h2>Wildlife Photography Journey</h2>
+    </header>
+
+    <div class="animal-grid">
+        <a href="./animals/pelicant.html" class="animal-card">
+            <span class="category">Bird</span>
+            <p class="animal-name">Pelican</p>
+        </a>
+
+        <a href="./animals/flamingoo.html" class="animal-card">
+            <span class="category">Bird</span>
+            <p class="animal-name">Flamingo</p>
+        </a>
+
+        <a href="./animals/sumattiger.html" class="animal-card">
+            <span class="category">Mammal | Endangered</span>
+            <p class="animal-name">Sumatran Tiger</p>
+        </a>
+
+        <a href="./animals/snakeheads.html" class="animal-card">
+            <span class="category">Fish</span>
+            <p class="animal-name">Snakehead (Channa)</p>
+        </a>
+
+        <a href="./animals/giraffee.html" class="animal-card">
+            <span class="category">Mammal</span>
+            <p class="animal-name">Giraffe</p>
+        </a>
+
+        <a href="./animals/crococ.html" class="animal-card">
+            <span class="category">Reptile</span>
+            <p class="animal-name">Saltwater Crocodile</p>
+        </a>
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html" class="home-btn">← Back to Us</a>
+    </div>
+
+</body>
+</html>

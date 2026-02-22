@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumatran Tiger</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f1;
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #1b4d3e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            border-bottom: 3px solid #d63031; /* Merah untuk tanda bahaya/kritis */
+            padding-bottom: 5px;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ced6e0;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        strong {
+            color: #1b4d3e;
+        }
+
+        /* Status Tag khusus untuk Critically Endangered */
+        .status-tag-danger {
+            background-color: #d63031; /* Warna merah mencolok */
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            animation: pulse 2s infinite; /* Efek berkedip halus untuk perhatian */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .back-btn {
+            margin-top: 25px;
+            text-decoration: none;
+            color: #1b4d3e;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #d63031;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sumatran Tiger</h1>
+
+    <div class="image-container">
+        <img src="../../assets/images/sumatrantiger.jpeg" alt="Majestic Sumatran Tiger by Faaiz and Aulia">
+    </div>
+
+    
+
+    <ul>
+        <li><strong>Scientific Name:</strong> <em>Panthera tigris sumatrae</em></li>
+        <li><strong>Habitat:</strong> Tropical rainforests and peat swamps of Sumatra.</li>
+        <li><strong>Fun Fact:</strong> They are the smallest of all tigers, allowing them to move easily through thick jungles. They also have "webs" between their toes which make them powerful swimmers!</li>
+        <li><strong>Conservation Status:</strong> <span class="status-tag-danger">Critically Endangered</span></li>
+    </ul>
+
+    <a href="../anilist.html" class="back-btn">← Back to Animal List</a>
+
+</body>
+</html>

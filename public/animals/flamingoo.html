@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingo</title>
+    <style>
+        /* Tema Earth Tones */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f1;
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #1b4d3e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            border-bottom: 3px solid #e91e63; /* Aksen pink sesuai warna Flamingo */
+            padding-bottom: 5px;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ced6e0;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        strong {
+            color: #1b4d3e;
+        }
+
+        /* Tag status khusus flamingo */
+        .status-tag {
+            background-color: #27ae60;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .back-btn {
+            margin-top: 25px;
+            text-decoration: none;
+            color: #1b4d3e;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #e91e63; /* Berubah jadi pink saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flamingo</h1>
+
+    <div class="image-container">
+        <img src="../../assets/images/flamingo.jpeg" alt="a pinky flamingo">
+    </div>
+
+    <ul>
+        <li><strong>Scientific Name:</strong> <em>Phoenicopterus roseus</em></li>
+        <li><strong>Habitat:</strong> Saline lakes, estuarine lagoons, and marshes.</li>
+        <li><strong>Fun Fact:</strong> Flamingos get their signature pink color from their diet! They eat brine shrimp and blue-green algae, which are rich in alpha and beta carotene.</li>
+        <li><strong>Conservation Status:</strong> <span class="status-tag">Least Concern</span></li>
+    </ul>
+
+    <a href="../anilist.html" class="back-btn">← Back to Animal List</a>
+
+</body>
+</html>

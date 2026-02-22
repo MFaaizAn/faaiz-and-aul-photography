@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelican</title>
+    <style>
+        /* Mengikuti tema Earth Tones sebelumnya */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f1; /* Ivory Green */
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #1b4d3e; /* Jungle Green */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            border-bottom: 3px solid #8ba888;
+            padding-bottom: 5px;
+        }
+
+        /* Container untuk gambar */
+        .image-container {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        /* Desain List Informasi */
+        ul {
+            list-style-type: none; /* Menghilangkan dot standar */
+            padding: 0;
+            max-width: 600px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ced6e0;
+        }
+
+        li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        /* Memberi warna berbeda pada label agar rapi */
+        strong {
+            color: #1b4d3e;
+        }
+
+        .status-tag {
+            background-color: #27ae60; /* Hijau Segar untuk Least Concern */
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        /* Tombol Kembali */
+        .back-btn {
+            margin-top: 25px;
+            text-decoration: none;
+            color: #1b4d3e;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #8ba888;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pelican</h1>
+
+    <div class="image-container">
+        <img src="../../assets/images/pelican.jpeg" alt="a very cute pelican">
+    </div>
+
+    <ul>
+        <li><strong>Scientific Name:</strong> <em>Pelecanus onocrotalus</em></li>
+        <li><strong>Habitat:</strong> Shallow lakes, marshes, and deltas across Africa, Europe, and Asia.</li>
+        <li><strong>Fun Fact:</strong> Pelicans have a massive throat pouch called a "gular pouch" that can hold up to 11 liters of water—it’s not for storing food for long, but mainly used as a "dip net" to scoop up fish.</li>
+        <li><strong>Conservation Status:</strong> <span class="status-tag">Least Concern (Population stable)</span></li>
+    </ul>
+
+    <a href="../anilist.html" class="back-btn">← Back to Animal List</a>
+
+</body>
+</html>
